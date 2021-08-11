@@ -11,14 +11,19 @@ body{
 body{
     background-color: gainsboro;
 }
+h2{
+    color: #fff;
+}
 
 ul{
     list-style: none;
 }
 
 main{
+    justify-content: center;
+    flex-direction: row;
     margin: 1rem;
-    display: grid;
+    display: flex;
     grid-template-columns: 33% 1fr;
     grid-gap: 1rem;
     filter: drop-shadow(0 0 0.4rem black);
@@ -80,4 +85,30 @@ footer{
 }
 footer i{
     color: #fff;
+}
+.btn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    display: flex;
+    border-radius: 50%;
+    
+}
+img.hautdp {
+    position: fixed;
+}
+@media screen and (max-width: 568px) {
+    main{
+        flex-direction: column;
+        margin: 0;
+}
+    .left, .right{
+        width: 100%;
+    }
+    .btn{
+        right: 40px;
+    }
 }
