@@ -11,6 +11,11 @@ body{
 body{
     background-color: gainsboro;
 }
+body.dark{
+    background-color: #292c35;
+    color: #ffffff;
+}
+
 h2{
     color: #fff;
 }
@@ -26,16 +31,15 @@ main{
     display: flex;
     grid-template-columns: 33% 1fr;
     grid-gap: 1rem;
-    filter: drop-shadow(0 0 0.4rem black);
 }
 .personal, .skills, .languages{
     padding: 1rem;
     line-height: 2;
 }
 
-.left, .education, .experience{
+/* .left, .education, .experience{
     background-color: #fff;
-}
+} */
 
 .left-image img{
     width: 100%;
@@ -111,4 +115,50 @@ img.hautdp {
     .btn{
         right: 40px;
     }
+}
+
+.label {
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    height: 26px;
+    width: 50px;
+}
+.fa-moon{
+    color: #f1c40f;
+}
+.fa-sun{
+    color: #f39c12;
+}
+
+.ball{
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 26px;
+    transition: transform 0.2s linear;
+}
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+.checkbox:checked + .label .ball{
+    transform: translateX(24px);
+}
+.div {
+    align-items: baseline;
+}
+.lineshadow{
+    filter: drop-shadow(0 0 0.4rem black);
+}
+.border {
+    border: 1px solid lawngreen;
+    
 }

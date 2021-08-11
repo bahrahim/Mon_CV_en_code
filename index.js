@@ -10,3 +10,9 @@ btn.addEventListener('click', () => {
 
 })
 
+const checkbox = document.getElementById('checked');
+
+checkbox.addEventListener('change', () => {
+    //change the theme of cv
+    document.body.classList.toggle('dark')
+});
