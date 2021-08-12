@@ -55,6 +55,7 @@ main{
     border-radius: 50%;
     justify-content: center;
     margin: 2em;
+    border: 2px solid
 }
 
 .left-image h2{
