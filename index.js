@@ -20,3 +20,11 @@ checkbox.addEventListener('change', () => {
 });
 
 
+// // BOUTON SWITCH TEXT H1
+
+// const switch = documents.getElementById('.blanc');
+//     // changement de tu titre au swich dark
+//     switch.addEventListener('change')
+//     document.h2.classList.toggle('white')
+// });
+
