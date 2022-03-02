@@ -19,7 +19,9 @@ h1 , h3{
     text-align: center;
 }
 
-
+h2{
+    margin-left: 10px;
+}
 
 ul{
     list-style: none;
